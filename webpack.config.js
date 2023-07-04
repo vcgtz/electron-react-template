@@ -50,6 +50,9 @@ module.exports = [
         }
       ],
     },
+    resolve: {
+      extensions: ['.js', '.json', '.ts', '.tsx'],
+    },
     output: {
       path: __dirname + '/dist',
       filename: 'app.js'
@@ -58,6 +61,6 @@ module.exports = [
       new HtmlWebpackPlugin({
         template: './src/index.html'
       })
-    ]
+    ],
   }
 ];
